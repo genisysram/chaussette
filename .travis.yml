@@ -11,6 +11,19 @@ matrix:
       env: TOX_ENV=flake8
     - python: 3.5
       env: TOX_ENV=docs
+      # power job
+    - python: 2.7
+      env: TOX_ENV=py27
+      arch: ppc64le
+    - python: 3.5
+      env: TOX_ENV=py35
+      arch: ppc64le
+    - python: 3.5
+      env: TOX_ENV=flake8
+      arch: ppc64le
+    - python: 3.5
+      env: TOX_ENV=docs 
+      arch: ppc64le
 addons:
     apt:
         packages:
